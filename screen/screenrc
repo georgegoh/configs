@@ -1,0 +1,3 @@
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{.wG} %H %{.wY} %d/%m/%y %C%a "

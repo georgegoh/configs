@@ -1,0 +1,6 @@
+This is an approximation of the solarized color scheme by Ethan Schoonover
+(http://ethanschoonover.com/solarized) for the shellinabox project
+(http://code.google.com/p/shellinabox/).
+
+To use it, run as root:
+/usr/local/bin/shellinaboxd --css=/opt/shellinabox/schemes/styles.css

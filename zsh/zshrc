@@ -33,12 +33,17 @@ ZSH_THEME="george"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brews)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR=vim
 # Customize to your needs...
-export PATH=$HOME/.rvm/gems/ruby-1.9.3-head/bin:$HOME/.rvm/gems/ruby-1.9.3-head@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-head/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$HOME/packer:$HOME/.rvm/gems/ruby-1.9.3-head/bin:$HOME/.rvm/gems/ruby-1.9.3-head@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-head/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 export LC_CTYPE=en_US.UTF-8
+
+source $HOME/.aliases
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/workspace
+source /usr/local/bin/virtualenvwrapper.sh

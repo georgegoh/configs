@@ -32,3 +32,22 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+"BEGIN_DEVASSISTANT_1
+"Setting value devassistant to 0 will use your existing .vimrc file
+"Setting value devassistant to 1 will use the vimrc defined by the devassistant feature
+
+let devassistant=0
+if devassistant==1
+ :source /usr/share/devassistant/files/snippets/vim/vimrc
+endif
+"END_DEVASSISTANT_1
+
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+set laststatus=2 " Always display the statusline in all windows
+set showtabline=2 " Always display the tabline, even if there is only one tab
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set t_Co=256
+set sw=2
+set ts=2
